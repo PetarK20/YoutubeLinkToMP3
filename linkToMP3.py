@@ -4,8 +4,8 @@ from yt_dlp import YoutubeDL
 
 # === Избиране на папка ===
 root = Tk()
-root.withdraw()  # скрива основния прозорец
-output_folder = r"C:\Users\Lenovo\Desktop\music\Sasa Matic"
+root.withdraw() 
+output_folder = r"C:..................."
 
 if not output_folder:
     print("❌ Не е избрана папка. Програмата спира.")
@@ -14,7 +14,7 @@ if not output_folder:
 # === YouTube линкове ===
 youtube_links = [
  
-
+    # === links ===
 
 ]
 
@@ -27,7 +27,7 @@ ydl_opts = {
         'preferredcodec': 'mp3',
         'preferredquality': '192',
     }],
-    'ffmpeg_location': r"C:\Program Files\7-Zip\ffmpeg-8.0-essentials_build\bin",
+    'ffmpeg_location': r"C:...................",
     'noplaylist': True  # ТОВА е важно
 }
 
@@ -38,3 +38,4 @@ with YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
 print(f"\n✅ MP3 файловете са запазени в: {output_folder}")
+
